@@ -1,0 +1,8 @@
+version: "2.5"
+services:
+  reboot:
+    build: .
+    platform: linux/amd64
+    environment:
+      - TZ=Europe/Madrid
+      - ROUTER_ADMIN_PASSWORD=${ROUTER_ADMIN_PASSWORD}
